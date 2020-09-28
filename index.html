@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <link rel="stylesheet" href="styles.css">
+  <title>Exoplanetas</title>
+</head>
+<body>
+  <div id="particles-js"></div>
+  <header class="header">
+    <div class="navbar">
+      <nav class="nav">
+        <a class="nav-brand" href="https://maua.br">
+          <img class="nav-brand-image" src="images/maua-logo-branco.png" alt="Logo do Instituto Mauá de Tecnologia">
+        </a>
+        <span class="nav-separator"></span>
+        <ul class="nav-items">
+          <li class="nav-item">
+            <a href="#research">Pesquisa</a>
+          </li>
+          <li class="nav-item">
+            <a href="#model">Modelo</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about">Sobre</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hero">
+      <h1 class="hero-title">Exo</h1>
+      <h1 class="hero-title">Planetas</h1>
+    </div>
+  </header>
+  <aside class="research" id="research">
+    <h1 class="research-title">O que são?</h1>
+    <p class="research-content">
+      Exoplanetas, também chamados de planetas extrassolares, são
+      planetas que não se encontram no Sistema Solar, ou seja, orbitam outras estrelas ao
+      em vez do Sol, fazendo parte de outros sistemas planetários. Até 2020, já foram confirmados
+      a existência de mais de 4200 exoplanetas e de cerca de 3150 sistemas planetários.
+    </p>
+    <p class="research-content">
+      Apesar desses números, exoplanetas são muito difíceis de ver
+      diretamente com telescópios, pois estão ocultos pelo brilho das estrelas que orbitam.
+      Com isso, os astrônomos precisam fazer uso de outras técnicas parar detectar e estudar
+      esses planetas distantes.
+    </p>
+    <div class="research-parallax"></div>
+    <h1 class="research-title">Como identificá-los?</h1>
+    <p class="research-content">
+      Os pesquisadores procuram por exoplanetas observando os efeitos que esses planetas têm
+      sobre as estrelas que orbitam. Uma das maneiras de encontrá-los é procurar por estrelas
+      “vacilantes”. Quando uma estrela tem planetas, ela não orbita perfeitamente em torno de
+      seu centro. Dessa forma, essa órbita descentralizada faz com que a estrela pareça trêmula
+      quando observada a distância.
+    </p>
+    <p class="research-content">
+      Apesar de centenas de planetas terem sido descobertos usando esse método, apenas grandes
+      planetas – como Júpiter, ou até maiores – podem ser vistos dessa maneira. Planetas menores,
+      como a Terra, são muito mais difíceis de encontrar, porque criam apenas pequenas oscilações,
+      mais difíceis de detectar. Por isso, em 2009, a NASA lançou uma espaçonave chamada Kepler
+      para procurar exoplanetas usando o chamado método de trânsito. 
+    </p>
+    <p class="research-content">
+      Quando um planeta passa na frente de sua estrela, isso é chamado de trânsito. À medida que
+      o planeta transita diante da estrela, ele bloqueia um pouco da luz da mesma. Isso significa
+      que uma estrela parecerá menos brilhante quando o planeta passar à sua frente.
+      Assim, observando como o brilho da estrela muda durante um trânsito, é possível descobrir o
+      tamanho do planeta, e estudando o tempo entre os trânsitos, pode-se aferir a que distância
+      ele está de sua estrela.
+    </p>
+    <div class="research-parallax"></div>
+  </aside>
+  <main class="main" id="model">
+    <h1 class="model-title">Descubra você mesmo!</h1>
+    <p class="model-content">
+      Para ajudar na identificação de exoplanetas, pesquisadores do Instituto Mauá de Tecnologia
+      criaram um modelo de machine learning capaz identificar esses planetas tendo como base as
+      leituras realizadas pelos telescópios.
+      <i>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium accusantium nostrum impedit corrupti quam repudiandae consectetur animi assumenda esse. Nihil fuga accusantium quidem ipsam, amet eligendi tenetur reprehenderit beatae.
+      </i>
+    </p>
+    <p class="model-content">
+      <i>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus maiores tempora magni dolore odio amet, dicta architecto ipsam delectus vitae error aspernatur sint, illum eius voluptatum perferendis sit rem repudiandae!
+      </i>
+    </p>
+    <div class="model-dropzone" id="model-dropzone">
+      <div class="model-dropform">
+        <svg class="model-icon" xmlns="http://www.w3.org/2000/svg" width="50" height="43" viewBox="0 0 50 43"><path d="M48.4 26.5c-.9 0-1.7.7-1.7 1.7v11.6h-43.3v-11.6c0-.9-.7-1.7-1.7-1.7s-1.7.7-1.7 1.7v13.2c0 .9.7 1.7 1.7 1.7h46.7c.9 0 1.7-.7 1.7-1.7v-13.2c0-1-.7-1.7-1.7-1.7zm-24.5 6.1c.3.3.8.5 1.2.5.4 0 .9-.2 1.2-.5l10-11.6c.7-.7.7-1.7 0-2.4s-1.7-.7-2.4 0l-7.1 8.3v-25.3c0-.9-.7-1.7-1.7-1.7s-1.7.7-1.7 1.7v25.3l-7.1-8.3c-.7-.7-1.7-.7-2.4 0s-.7 1.7 0 2.4l10 11.6z"></path></svg>
+        <div class="model-file">
+          <input type="file" id="model-file" accept=".csv" style="display: none;">
+          <label class="model-file-button" for="model-file"><strong>Escolha um arquivo</strong></label>
+          <p>&nbsp;ou arraste ele aqui</p>
+        </div>
+        <p class="model-file-name" id="model-file-name"></p>
+      </div>
+    </div>
+    <button class="model-send" id="model-send">Classificar</button>
+  </main>
+  <footer class="footer">
+    <article class="maua">
+      <div class="maua-bg-up">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-300 -40 950 270">
+          <path d="M-314,267 C105,364 400,100 812,279" fill="none" stroke="#444e58" stroke-width="120" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="maua-info" id="about">
+        <div class="maua-merchan">
+          <div class="maua-merchan-content">
+            <h3 class="maua-merchan-title">Instituto Mauá de Tecnologia</h3>
+            <p class="maua-merchan-description">
+              O Instituto Mauá de Tecnologia - IMT, fundado em 11 de dezembro de 1961, é uma entidade
+              de direito privado - associação sem fins lucrativos - de utilidade pública, dedicada ao
+              ensino e à pesquisa científica e tecnológica, visando à formação de recursos humanos
+              altamente qualificados que contribuam para o desenvolvimento do País.
+            </p>
+          </div>
+          <a href="https://maua.br">
+            <img class="maua-merchan-image" src="images/maua-entrance.jpg" alt="Foto da entrada do Instituto Mauá de Tecnologia">
+          </a>
+        </div>
+        <div class="maua-projects">
+          <div class="project-members">
+            <h3 class="project-members-title">Pesquisadores</h3>
+            <hr>
+            <div class="project-member">
+              <h5 class="project-member-name">Marcelo Lafetá</h5>
+              <a href="mailto:marcelolafeta.nsee@gmail.com" class="project-member-contact">marcelolafeta.nsee@gmail.com</a>
+              <p class="project-member-description">Formado em Eng. Eletrônica, é especialista em Machine Learning e Identificação de Sistemas.</p>
+              <div class="project-member-medias">
+                <a href="https://www.linkedin.com/in/marcelo-lafet%C3%A1-lima" class="project-member-media">LinkedIn</a>
+                <a href="https://github.com/lafetamarcelo" class="project-member-media">GitHub</a>
+              </div>
+            </div>
+            <div class="project-member">
+              <h5 class="project-member-name">Vanderlei Parro</h5>
+              <a href="mailto:vparro@ieee.org" class="project-member-contact">vparro@ieee.org</a>
+              <p class="project-member-description">Doutor em Eng. Eletrônica, é professor de Estatística Aplicada e Identificação de Sistemas.</p>
+              <div class="project-member-medias">
+                <a href="https://www.linkedin.com/in/vparro" class="project-member-media">LinkedIn</a>
+                <a href="https://github.com/vparro" class="project-member-media">GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="other-projects">
+            <h3 class="other-projects-title">Outros projetos</h3>
+            <hr>
+            <a href="https://epidemicmodels.readthedocs.io" class="other-projects-link">Epidemic Models</a>
+            <a href="https://corot-contributions.readthedocs.io" class="other-projects-link">CoRoT Contributions</a>
+            <a href="https://www.linkedin.com/feed/update/urn:li:activity:6669026129640255488" class="other-projects-link">Giant Magellan Telescope</a>
+            <a href="https://directory.eoportal.org/web/eoportal/satellite-missions/p/plato" class="other-projects-link">PLATO</a>
+          </div>
+        </div>
+      </div>
+      <div class="maua-bg-down">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-300 -40 350 270">
+          <path d="M-314,267 C150,364 300,100 512,279" fill="none" stroke="white" stroke-width="120" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </article>
+    <div class="copyright">
+      <p>Desenvolvido por <a href="https://github.com/Kaisen-san"><strong>Felipe Andrade</strong></a></p>
+    </div>
+  </footer>
+  <script src="libs/js/particles-2.0.0.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
